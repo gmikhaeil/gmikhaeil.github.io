@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Montserrat", sans-serif}
+img {margin-bottom: -7px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
+<body>
+
+<div class="w3-top">
+    <div class="w3-row w3-padding w3-black">
+      <div class="w3-col s3">
+        <a href="https://github.com/gmikhaeil" class="w3-button w3-block w3-black">github</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="#about" class="w3-button w3-block w3-black">photos</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="index.html" class="w3-button w3-block w3-black">blog</a>
+      </div>
+      <div class="w3-col s3">
+        <a href="#where" class="w3-button w3-block w3-black">about me!</a>
+      </div>
+    </div>
+    <div class="w3-row-padding">
+  </div
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+<!-- Header -->
+<div class="w3-opacity">
+<span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"></span> 
+<div class="w3-clear"></div>
+<header class="w3-center w3-margin-bottom">
+  <h1><b>photos</b></h1>
+  <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p>
+</header>
+</div>
+
+<!-- Photo Grid -->
+<div class="w3-row" id="myGrid" style="margin-bottom:128px">
+  <div class="w3-third">
+    <img src="PICS/FILM/r1_1.JPG" style="width:100%">
+    <img src="PICS/FILM/r1_2.JPG" style="width:100%">
+    <img src="PICS/FILM/r1_3.JPG" style="width:100%">
+    <img src="PICS/FILM/r1_4.JPG" style="width:100%">
+    <img src="PICS/FILM/r1_5.JPG" style="width:100%">
+    <img src="PICS/FILM/r1_6.JPG" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="PICS/FILM/r1_7.JPG" style="width:100%">
+    <img src="PICS/FILM/r1_8.JPG" style="width:100%">
+    <img src="PICS/FILM/r1_9.JPG" style="width:100%">
+    <img src="PICS/FILM/r1_10.JPG" style="width:100%">
+    <img src="PICS/FILM/r1_11.JPG" style="width:100%">
+    <img src="PICS/FILM/r1_12.JPG" style="width:100%">
+  </div>
+
+  <div class="w3-third">
+    <img src="PICS/FILM/r1_13.JPG" style="width:100%">
+    <img src="PICS/FILM/r1_14.JPG" style="width:100%">
+    <img src="PICS/FILM/r1_15.JPG" style="width:100%">
+    <img src="PICS/FILM/r1_16.JPG" style="width:100%">
+    <img src="PICS/FILM/r1_17.JPG" style="width:100%">
+    <img src="PICS/FILM/r1_18.JPG" style="width:100%">
+  </div>
+</div>
+
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-gray w3-center w3-margin-top">
+    <p>Find me on social media.</p>
+    <a href="https://www.instagram.com/banana_jpeg/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/banana_jpeg/"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/georgemmikhaeil"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+ 
+<script>
+// Toggle grid padding
+function myFunction() {
+  var x = document.getElementById("myGrid");
+  if (x.className === "w3-row") {
+    x.className = "w3-row-padding";
+  } else { 
+    x.className = x.className.replace("w3-row-padding", "w3-row");
+  }
+}
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
