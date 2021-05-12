@@ -1,0 +1,21 @@
+    .top {
+        position:absolute;
+        left:0; right:0;
+        height: 100px;
+		border: 3px solid black;
+    }
+    .left {
+        position:absolute;
+        left:0; top:92px; bottom: 0;
+        width: 178px;
+		border: 3px solid black;
+    }
+    .main {
+        position: absolute;
+        left:178px; top:92px; right:0; bottom:0;
+		border: 3px solid black;
+    }
+
+.top { background: ghostwhite; }
+.left { background: cadetblue; }
+.main { background: ghostwhite; }
